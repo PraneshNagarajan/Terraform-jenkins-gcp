@@ -16,7 +16,7 @@ resource "google_compute_instance" "tf-vm-1" {
   network_interface {
     network = "default"
     access_config {
-      nat_ip = google_compute_address.vm1-public-ip.address
+      nat_ip = google_compute_address.net_ip.address
     }
   }
 }

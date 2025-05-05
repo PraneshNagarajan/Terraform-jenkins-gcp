@@ -3,7 +3,7 @@ resource "google_compute_address" "net_ip" {
   name = "vm-public-ip"
 }
 
-resource "google_compute_instances" "tf-vm-1" {
+resource "google_compute_instance" "tf-vm-1" {
   name = "tf-vm-1"
   machine_type= "e2-medium"
   boot_disk {
